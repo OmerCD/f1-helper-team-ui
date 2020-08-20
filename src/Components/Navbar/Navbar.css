@@ -1,0 +1,8 @@
+.navbar-container{
+    position: sticky;
+    top: 0;
+    background: #282c34;
+    width: 100%;
+    display: flex;
+    z-index: 500;
+}
