@@ -1,21 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import HomePage from "./Pages/Home/HomePage";
 import Navigator from "./Components/Navbar/Navigator";
 import {LanguageProvider} from "./Contexts/LanguageContext";
 import {SettingsProvider} from "./Contexts/SettingsContext";
 import {AxiosRequestProvider} from "./Contexts/AxiosRequestContext";
+import {SiteRouteProvider} from "./Contexts/SiteRouteContext";
 
-function App() {
+const Providers = ({children}) => {
     return (
         <LanguageProvider>
             <SettingsProvider>
                 <AxiosRequestProvider>
-                    <Navigator/>
+                    <SiteRouteProvider>
+                        {children}
+                    </SiteRouteProvider>
                 </AxiosRequestProvider>
             </SettingsProvider>
         </LanguageProvider>
+    )
+}
+
+function App() {
+    return (
+        <Providers>
+            <Navigator/>
+        </Providers>
     );
 }
 
