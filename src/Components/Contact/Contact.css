@@ -1,0 +1,43 @@
+.contact-container{
+    display: block;
+    flex-direction: column;
+    padding: 4px;
+    /*border: 1px solid crimson;*/
+}
+.contact-item{
+    margin-bottom: 6px;
+}
+.contact-message{
+    width: 100%;
+    resize: none;
+    padding: 16px 12px;
+}
+.contact-name{
+    width: 50%;
+    font-size: 14pt;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 2px solid #8a8a8a;
+}
+.contact-name:focus{
+    outline: none;
+    border: 2px solid #555;
+}
+.contact-button{
+    margin-right: 0;
+    margin-left: auto;
+    background: #66964f;
+    color: white;
+    border-radius: 3px;
+    padding: 16px 32px;
+    border: none;
+    font-size: 12pt;
+}
+.contact-button:hover{
+    background: #93c371;
+    cursor: pointer;
+}
+.contact-button-container{
+    display: flex;
+    justify-content: space-around;
+}

@@ -5,6 +5,7 @@ import HomePage from "../../Pages/Home/HomePage";
 import LanguageSelector from "../Language/LanguageSelector";
 import {ParallaxProvider} from "react-scroll-parallax/cjs";
 import ProjectsPage from "../../Pages/Projects/ProjectsPage";
+import ContactPage from "../../Pages/Contact/ContactPage";
 
 function Navigator() {
     return (
@@ -25,7 +26,7 @@ function Navigator() {
                         <h1>About Us</h1>
                     </Route>
                     <Route path={'/contact'}>
-                        <h1>Contact</h1>
+                        <ContactPage/>
                     </Route>
                     <Route path={'/language'}>
                         <LanguageSelector/>

@@ -1,0 +1,9 @@
+.contact-main-container{
+    display: flex;
+    width: 40%;
+    /*border: 1px solid black;*/
+    margin: auto;
+}
+.contact-main-adjust{
+    display: flex;
+}
